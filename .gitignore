@@ -1,0 +1,21 @@
+target/
+.idea/
+logs/
+.idea/*
+bmqb-fap.iml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+*.jar
+*/*.iml
+*/target/
+
+fap-config/src/main/resources/config/*.properties
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
