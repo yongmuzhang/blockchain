@@ -52,6 +52,14 @@ sudo apt-get install golang-1.9
 > 部分命令
 
 >> 同步模式：--syncmode，light轻节点，fast快节点，full全节点，默认全节点
+````javascript
+The Light Ethereum Subprotocol (LES) is the protocol used by “light” clients, which only download block headers as they appear and fetch other parts of the blockchain on-demand.
+````
+```javascript
+Full Sync: Gets the block headers, the block bodies, and validates every element from genesis block.
+Fast Sync: Gets the block headers, the block bodies, it processes no transactions until current block - 1024. Then it gets a snapshot state and proceeds like a full sync.
+Light Sync: Gets only the current state. To verify elements, it needs to ask to full (archive) nodes for the corresponding tree leaves.
+```
 
 >> 接入网络：--testnet(testnet测试网络)，--rinkeby(rinkeby测试网络)，默认主网络
 
